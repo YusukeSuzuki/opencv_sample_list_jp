@@ -40,6 +40,33 @@ cv::Stitcher のサンプル
 
 入力画像
 
+|pic1| |pic2| |pic3| |pic4| |pic5| |pic6| |pic7| 
+
+.. |pic1| image:: sample/pic1.jpg
+	:scale: 15%
+
+.. |pic2| image:: sample/pic2.jpg
+	:scale: 15%
+
+.. |pic3| image:: sample/pic3.jpg
+	:scale: 15%
+
+.. |pic4| image:: sample/pic4.jpg
+	:scale: 15%
+
+.. |pic5| image:: sample/pic5.jpg
+	:scale: 15%
+
+.. |pic6| image:: sample/pic6.jpg
+	:scale: 15%
+
+.. |pic7| image:: sample/pic7.jpg
+	:scale: 15%
+
+
 出力画像
+
+.. image:: sample/out.png
+	:scale: 25%
 
 
