@@ -1,4 +1,4 @@
-target = opencv_stitching
+target = stitching.bin
 objects = main.o
 
 CXXFLAGS = -std=c++0x -Wall -Werror -g `pkg-config --cflags opencv`

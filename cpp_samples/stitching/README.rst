@@ -26,13 +26,13 @@ cv::Stitcher のサンプル
 コンパイルができたら以下のように実行します．::
 
 	# --imagesに入力画像をカンマ区切りで列挙する
-	./opencv_stitching --images=pic1.jpg,pic2.jpg,pic3.jpg,pic4.jpg,pic5.jpg
+	./stitching.bin --images=pic1.jpg,pic2.jpg,pic3.jpg,pic4.jpg,pic5.jpg
 
 	# OpenCV 添付のサンプルで使用される imagelist 形式の入力にも対応します。
-	./opencv_stitching --imagelist photos.yml
+	./stitching.bin --imagelist photos.yml
 
 	# --out オプションで出力ファイル名・ファイル形式を指定できます
-	./opencv_stitching --imagelist photos.yml --out panorama.jpg
+	./stitching.bin --imagelist photos.yml --out panorama.jpg
 
 
 動作結果
