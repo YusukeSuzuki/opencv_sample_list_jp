@@ -42,38 +42,31 @@ cv::Stitcher のサンプル
 
 |pic1| |pic2| |pic3| |pic4| |pic5| |pic6| |pic7| 
 
-.. |pic1| image:: sample/pic1.jpg
-	:width: 240px
-	:height: 180px
+.. |pic1| image:: sample/thumb_pic1.jpg
+	:target: sample/pic1.jpg
 
-.. |pic2| image:: sample/pic2.jpg
-	:width: 240px
-	:height: 180px
+.. |pic2| image:: sample/thumb_pic2.jpg
+	:target: sample/pic2.jpg
 
-.. |pic3| image:: sample/pic3.jpg
-	:width: 240px
-	:height: 180px
+.. |pic3| image:: sample/thumb_pic3.jpg
+	:target: sample/pic3.jpg
 
-.. |pic4| image:: sample/pic4.jpg
-	:width: 240px
-	:height: 180px
+.. |pic4| image:: sample/thumb_pic4.jpg
+	:target: sample/pic4.jpg
 
-.. |pic5| image:: sample/pic5.jpg
-	:width: 240px
-	:height: 180px
+.. |pic5| image:: sample/thumb_pic5.jpg
+	:target: sample/pic5.jpg
 
-.. |pic6| image:: sample/pic6.jpg
-	:width: 240px
-	:height: 180px
+.. |pic6| image:: sample/thumb_pic6.jpg
+	:target: sample/pic6.jpg
 
-.. |pic7| image:: sample/pic7.jpg
-	:width: 240px
-	:height: 180px
+.. |pic7| image:: sample/thumb_pic7.jpg
+	:target: sample/pic7.jpg
 
 
 出力画像
 
-.. image:: sample/out.png
-	:scale: 25%
+.. image:: sample/thumb_out.png
+	:target: sample/out.png
 
 
