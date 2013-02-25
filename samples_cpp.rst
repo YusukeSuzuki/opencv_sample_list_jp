@@ -174,7 +174,8 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 
 	|cooked|
 
-	- http://opencv.jp/cookbook/opencv_img.html#id26`
+	- http://opencv.jp/cookbook/opencv_img.html#id26
+		
 		cv::HoughLines() による直線の検出
 
 
