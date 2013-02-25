@@ -128,18 +128,55 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 
 検出処理（古典的）
 --------------------------------------------------------------------------------
+- contours2.cpp
+	輪郭抽出のサンプル。
+
+	|cooked|
+
+	- http://opencv.jp/cookbook/opencv_img.html#id54
+
 - connected_components.cpp
 	輪郭ベースの接続領域抽出のサンプル
-- contours2.cpp
-	輪郭抽出のサンプル
+
+	しきい値で二値化した画像の白領域の連結領域の抽出を行うサンプル。
+	cv::findContours() でトップレベルの輪郭を抽出し、それを塗りつぶして連結領域として表示している。
+	また二値化は cv::Mat と double の比較演算子のオーバーロードを使用している。単純な数値比較による二値化を簡潔に記述するサンプルでもある。
+
+	|cooked|
+
+	- http://opencv.jp/cookbook/opencv_img.html#id54
+
 - fitellipse.cpp
-	楕円当てはめのデモ
-- houghcircles.cpp
-	ハフ変換による円の検出
-- houghlines.cpp
-	ハフ変換による線分の検出
+	楕円当てはめのサンプル。抽出した輪郭に cv::fitEllipse() で楕円当てはめを行う。
+
+	|cooked|
+
+	- http://opencv.jp/cookbook/opencv_img.html#id30
+
 - squares.cpp
-	矩形当てはめ
+	四角形抽出のサンプル。Cannyエッジ画像から抽出した輪郭成分を cv::approxPolyDP() で多角形近似し、近似結果の角の数が4つのものを4角形として表示している。
+
+	画像ピラミッドを用いたノイズ除去やCannyエッジによるグラデーションのある形状の輪郭抽出の工夫も参考になる。
+
+- houghcircles.cpp
+	ハフ変換による円の検出のサンプル。
+	
+	cv::HoughCircles() によりグレイスケール画像から円を検出する。
+	
+	|cooked|
+	
+	- http://opencv.jp/cookbook/opencv_img.html#id29	
+
+- houghlines.cpp
+	ハフ変換による線分の検出処理のサンプル。
+
+	cv::HoughLinesP() により、エッジ画像から線分を検出する。
+
+	|cooked|
+
+	- http://opencv.jp/cookbook/opencv_img.html#id26`
+		cv::HoughLines() による直線の検出
+
 
 検出処理（最近のアルゴリズム）
 --------------------------------------------------------------------------------
