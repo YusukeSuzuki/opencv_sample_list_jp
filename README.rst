@@ -9,10 +9,11 @@ OpenCVのサンプル
 --------------------------------------------------------------------------------
 
 - `OpenCV 2.4.0 のサンプルソースの一覧(samples/cpp)`_
+- `OpenCVのサンプル（私家版）`_
 
 
 .. _OpenCV 2.4.0 のサンプルソースの一覧(samples/cpp) : ./samples_cpp.rst
-
+.. _OpenCVのサンプル（私家版） : ./cpp_samples/README.rst
 
 
 
