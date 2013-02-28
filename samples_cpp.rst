@@ -346,10 +346,6 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	latentSVM 検出のデモ
 - letter_recog.cpp
 	文字認識のデモ
-- matcher_simple.cpp
-	SURFマッチング
-- matching_to_many_images.cpp
-	SURFマッチング
 - meanshift_segmentation.cpp
 	mean-shiftによるカラーセグメンテーション
 - multicascadeclassifier.cpp
