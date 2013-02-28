@@ -40,6 +40,7 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	- http://opencv.jp/cookbook/opencv_utility.html#opencv
 - starter_imagelist.cpp
 	imagelist.cppで作成したファイルからの画像の読み込みサンプル。画像ファイルをすべてコマンドライン引数で指定するのは大変なので、こうやって保存してこうやって読み込みましょうというお話。
+
 - starter_video.cpp
 	動画ファイルあるいはビデオデバイス（カメラやキャプチャカード）からの動画読み込みと、フレームの保存のサンプル
 
@@ -197,6 +198,15 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 
 	- http://opencv.jp/cookbook/opencv_img.html#id43
 
+- video_dmtx.cpp
+	Data Matrix の検出とデコードのサンプル。
+
+	ビデオデバイスから Data Matrix を検出、デコードして表示する。スペースキーで表示している画像を保存できる。
+
+	参考
+
+	- Data Matrix - WikiPedia http://en.wikipedia.org/wiki/Data_Matrix
+
 トラッキング系 / 動体検出系
 --------------------------------------------------------------------------------
 - bgfg_segm.cpp
@@ -350,8 +360,6 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	RGBD(深度付き画像)でのオドメトリ
 - select3dobj.cpp
 	オブジェクトのデータセットとそのセグメンテーションマスクの収集
-- video_dmtx.cpp
-	ビデオフレームのセーブ
 - video_homography.cpp
 	特徴量ベースのビデオ処理
 - videostab.cpp
