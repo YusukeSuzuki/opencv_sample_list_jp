@@ -5,7 +5,7 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 
 「OpenCV.jp : OpenCV逆引きリファレンス( http://opencv.jp/cookbook/ )」で同等の機能の解説がフォローされているものについては、そちらへのURLを記載します。
 
-.. |cooked| replace:: **（クックブックでフォローされている）**
+.. |cooked| replace:: **（OpenCV逆引きリファレンスでフォローされている）**
 
 .. contents:: 目次
 
@@ -220,6 +220,52 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	カメラの前に印刷物などをかざして動かすと動作がよくわかる。
 
 	cv::phaseCorrelate() を使用している。
+
+画像特徴量
+--------------------------------------------------------------------------------
+- matcher_simple.cpp
+	SURF特徴量のマッチングのサンプル。二つの画像からそれぞれSURF特徴量を抽出し、対応をとる。
+
+	総当たりでマッチングをとる cv::BFMatcher が使用されている。
+
+	（OpenCV逆引きリファレンスでSURF特徴量の扱いについて解説されている）
+
+	- 特徴点を検出する http://opencv.jp/cookbook/opencv_img.html#id44
+	- 局所特徴量を計算する http://opencv.jp/cookbook/opencv_img.html#id46
+	- 局所特徴量の集合同士を比較する http://opencv.jp/cookbook/opencv_img.html#id50
+
+- matching_to_many_images.cpp
+	SURF特徴量のマッチングのサンプルその2。
+
+	起動方法::
+
+		matching_to_many_images 特徴点検出の種類 特徴量計算の種類 問い合わせ画像 訓練画像をリストしたテキストファイル 結果画像を出力するディレクトリ
+
+	- 特徴点検出の種類に指定できるアルゴリズム : STAR, FAST, MSER, ORB, GFTT, HARRIS, Dense
+	- 特徴量計算に指定できるアルゴリズム : BRIEF, ORB, FREAK
+
+	以下のディレクトリ構成を想定する。::
+	
+		./test/query/query_image.jpg
+		./test/train/train_image1.jpg
+		./test/train/train_image2.jpg
+		./test/train/train_image3.jpg
+		./test/train/train_image4.jpg
+		./test/train/train.txt
+		./test/result/
+
+	train.txt の内容::
+
+		train_image1.jpg
+		train_image2.jpg
+		train_image3.jpg
+		train_image4.jpg
+
+	ディレクトリ test に移動して以下の様に起動する。::
+
+		matching_to_many_images ORB ORB ./query/query_image.jpg ./train/train.txt ./result
+	
+	result 以下に問い合わせ画像と各訓練画像の特徴量の対応をとった結果画像が保存される。
 
 以下、未調査
 --------------------------------------------------------------------------------
