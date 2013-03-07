@@ -59,6 +59,8 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 - gencolors.cpp
 	cv::generateColors()を利用した任意の個数の異なる色を生成するサンプル。データ可視化などのために異なるラベル色を作ったりするのに使う。
 
+- ffilldemo.cpp
+	フラッドフィルのサンプル。cv::floodFill() を用いて連結成分の塗りつぶしを行う。
 
 基本的な画像処理
 --------------------------------------------------------------------------------
@@ -96,6 +98,10 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	|cooked|
 
 	- http://opencv.jp/cookbook/opencv_img.html#id25
+
+- meanshift_segmentation.cpp
+	mean-shiftによるカラーセグメンテーションのサンプル。cv::pyrMeanShiftFiltering()を用いて入力画像を色でセグメンテーションしている。
+
 
 統計・統計的手法
 --------------------------------------------------------------------------------
@@ -338,16 +344,12 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 	顔認識デモ
 - fback.cpp
 	dense optical flow のデモ Gunner Farneback
-- ffilldemo.cpp
-	フラッドフィルのデモ
 - generic_descriptor_match.cpp
 	ジェネリックデスクリプタのデモ
 - latentsvm_multidetect.cpp
 	latentSVM 検出のデモ
 - letter_recog.cpp
 	文字認識のデモ
-- meanshift_segmentation.cpp
-	mean-shiftによるカラーセグメンテーション
 - multicascadeclassifier.cpp
 	複数の分類器のカスケーディング
 - point_cloud.cpp
