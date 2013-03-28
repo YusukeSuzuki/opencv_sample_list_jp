@@ -209,6 +209,8 @@ OpenCV 2.4.0 に添付されているサンプルコードがどんなものな�
 
 	ビデオデバイスから Data Matrix を検出、デコードして表示する。スペースキーで表示している画像を保存できる。
 
+	cv::findDataMatrix() の使用により、読み取れるのは3文字のテキストのData Matrixに限られる。
+
 	検出関数 cv::findDataMatrix(), 描画関数 cv::drawDataMatrixCodes()。
 
 	参考
